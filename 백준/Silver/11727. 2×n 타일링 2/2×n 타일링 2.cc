@@ -1,18 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main(void){
     int n;
-    cin >> n;
-
-    int dp[1001];
-    dp[1] = 1; 
-    dp[2] = 3;  
-
-    for (int i = 3; i <= n; i++) {
-        dp[i] = (dp[i-1] +  dp[i-2] + dp[i-2]) % 10007;
+    cin>>n;
+    int d[1001];
+    d[1] = 1;
+    d[2] = 3;
+    for(int i = 3; i <= n; i++){
+        d[i] = (d[i-1] + d[i-2] + d[i-2])%10007;
     }
-
-    cout << dp[n]; 
-    return 0;
+    cout << d[n];
 }
