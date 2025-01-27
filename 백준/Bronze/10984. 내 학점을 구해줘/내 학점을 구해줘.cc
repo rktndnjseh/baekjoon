@@ -17,6 +17,6 @@ int main(){
             sum += C;
             GPA += C * G;
         }
-        cout << sum <<" "<< fixed << setprecision(1) << GPA/sum<<"\n";
+        cout << sum <<" "<<GPA/sum<<"\n";
     }
 }
